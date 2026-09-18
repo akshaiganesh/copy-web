@@ -133,4 +133,4 @@ http.createServer((req, res) => {
   const staticAsset = safePath(decoded);
   if (!staticAsset) { res.writeHead(403); res.end('Forbidden'); return; }
   sendFile(res, staticAsset);
-}).listen(5175, '127.0.0.1', () => console.log('Reference clone ready at http://127.0.0.1:5175'));
+}).listen(3000, "0.0.0.0", () => console.log('Reference clone ready at http://0.0.0.0:3000'));
