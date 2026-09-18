@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /resources-md/
+
+Sitemap: https://cofounder.co/sitemap.xml

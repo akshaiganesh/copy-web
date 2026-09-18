@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#262323"/>
+      <stop offset="100%" stop-color="#202020"/>
+    </linearGradient>
+    <linearGradient id="codeGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8D5B8"/>
+      <stop offset="100%" stop-color="#C9B898"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="44" height="44" rx="10" fill="#FBFBF8" stroke="#E8DFCF" stroke-width="1"/>
+  <path d="M22,26 L16,32 L22,38" fill="none" stroke="url(#codeGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42,26 L48,32 L42,38" fill="none" stroke="url(#codeGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M36,22 L28,42" fill="none" stroke="url(#codeGold)" stroke-width="2" stroke-linecap="round"/>
+  <rect x="20" y="18" width="24" height="2" rx="1" fill="#E8DFCF" opacity="0.6"/>
+  <rect x="20" y="44" width="24" height="2" rx="1" fill="#E8DFCF" opacity="0.6"/>
+</svg>

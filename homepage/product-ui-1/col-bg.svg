@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="400" height="600" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="colBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBFBF8" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#FAFAF6" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#F5F5F2" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="colGoldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E8D5B8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#D4C4A8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#E8D5B8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softShadowCol">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="2"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.08"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="400" height="600" rx="16" fill="url(#colBgGrad)" filter="url(#softShadowCol)"/>
+  <rect x="40" y="36" width="320" height="1" fill="url(#colGoldLine)"/>
+  <rect x="40" y="564" width="320" height="1" fill="url(#colGoldLine)"/>
+  <circle cx="400" cy="40" r="32" fill="#F2E9DA" opacity="0.4"/>
+  <circle cx="12" cy="560" r="24" fill="#F2E9DA" opacity="0.3"/>
+</svg>

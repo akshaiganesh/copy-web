@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3840 160" width="3840" height="160" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="creamGradientBottom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F2EFE8" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#F7F4ED" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#F5F5F2" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="topHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="12%" stop-color="#FFFFFF" stop-opacity="0.75"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="88%" stop-color="#FFFFFF" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="goldSubtle" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E8D5B8" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#E8D5B8" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#D4C4A8" stop-opacity="0.4"/>
+      <stop offset="80%" stop-color="#E8D5B8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E8D5B8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M80,40 Q300,10 960,15 Q1920,20 2880,15 Q3540,10 3760,40 Q3800,80 3720,90 Q2880,130 1920,125 Q960,130 120,90 Q40,80 80,40 Z" fill="url(#creamGradientBottom)"/>
+  <path d="M160,48 Q300,22 960,27 Q1920,32 2880,27 Q3540,22 3680,48" fill="none" stroke="url(#topHighlight)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M180,60 Q320,38 960,42 Q1920,46 2880,42 Q3520,38 3660,60" fill="none" stroke="url(#goldSubtle)" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="80" cy="65" r="16" fill="#E8DFCF" opacity="0.45"/>
+  <circle cx="3760" cy="65" r="16" fill="#E8DFCF" opacity="0.45"/>
+</svg>

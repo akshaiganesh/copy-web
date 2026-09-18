@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3840 180" width="3840" height="180" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="creamGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBFBF8" stop-opacity="1"/>
+      <stop offset="50%" stop-color="#F8F7F3" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#F2EFE8" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="highlightGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="85%" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="highlightGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="10%" stop-color="#F5E6D0" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#E8D5B8" stop-opacity="0.5"/>
+      <stop offset="90%" stop-color="#F5E6D0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softShadow" x="-0.5%" y="-5%" width="101%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="6" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.18"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="dottedPattern" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="1.5" fill="#D4C4A8" opacity="0.6"/>
+    </pattern>
+  </defs>
+  <g filter="url(#softShadow)">
+    <path d="M80,80 Q300,20 960,25 Q1920,30 2880,25 Q3540,20 3760,80 Q3800,120 3720,130 Q2880,160 1920,155 Q960,160 120,130 Q40,120 80,80 Z" fill="url(#creamGradient)"/>
+  </g>
+  <path d="M160,65 Q300,35 960,40 Q1920,45 2880,40 Q3540,35 3680,65" fill="none" stroke="url(#highlightGradient1)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M160,82 Q300,52 960,57 Q1920,62 2880,57 Q3540,52 3680,82" fill="none" stroke="url(#highlightGradient2)" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="120" y="120" width="3600" height="1" fill="url(#dottedPattern)"/>
+  <circle cx="80" cy="100" r="12" fill="#E8DFCF" opacity="0.5"/>
+  <circle cx="3760" cy="100" r="12" fill="#E8DFCF" opacity="0.5"/>
+</svg>

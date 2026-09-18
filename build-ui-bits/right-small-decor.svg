@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="smallAccentGrad" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#FBFBF8" stop-opacity="1"/>
+      <stop offset="45%" stop-color="#F5F0E6" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#EDE3D1" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#E8DCC6" stop-opacity="0.7"/>
+    </radialGradient>
+    <radialGradient id="shineGrad" cx="25%" cy="20%" r="40%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8D5B8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D4C4A8" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+  <path d="M32,6 Q52,10 56,30 Q60,52 38,58 Q14,62 8,40 Q4,16 24,8 Q28,6 32,6 Z" fill="url(#smallAccentGrad)" stroke="url(#goldEdge)" stroke-width="0.8"/>
+  <path d="M32,6 Q52,10 56,30 Q60,52 38,58 Q14,62 8,40 Q4,16 24,8 Q28,6 32,6 Z" fill="url(#shineGrad)"/>
+  <ellipse cx="20" cy="18" rx="6" ry="4" fill="#FFFFFF" opacity="0.35"/>
+  <path d="M18,22 Q28,14 38,18" fill="none" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bankGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#262323"/>
+      <stop offset="100%" stop-color="#202020"/>
+    </linearGradient>
+    <linearGradient id="bankGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8D5B8"/>
+      <stop offset="100%" stop-color="#D4C4A8"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="44" height="44" rx="10" fill="#FBFBF8" stroke="#E8DFCF" stroke-width="1"/>
+  <path d="M16,40 L32,22 L48,40 Z" fill="none" stroke="url(#bankGrad)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="18" y="40" width="6" height="10" rx="1" fill="url(#bankGold)"/>
+  <rect x="29" y="40" width="6" height="10" rx="1" fill="url(#bankGold)"/>
+  <rect x="40" y="40" width="6" height="10" rx="1" fill="url(#bankGold)"/>
+  <circle cx="32" cy="30" r="2" fill="url(#bankGrad)"/>
+</svg>
