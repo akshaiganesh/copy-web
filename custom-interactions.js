@@ -109,7 +109,6 @@
     stack.style.position = 'relative';
     stack.style.width = '320px';
     stack.style.height = 'auto';
-    stack.style.perspective = 'var(--notif-perspective, 300px)';
 
     notifs.forEach((n, i) => {
       setTimeout(() => {
@@ -133,15 +132,13 @@
           padding: 12px 14px;
           margin-bottom: 10px;
           background: linear-gradient(135deg, rgba(251,251,248,0.92) 0%, rgba(245,245,242,0.88) 100%);
-          backdrop-filter: blur(var(--notif-glass-blur, 16px)) saturate(var(--notif-glass-saturation, 1.19));
-          -webkit-backdrop-filter: blur(var(--notif-glass-blur, 16px)) saturate(var(--notif-glass-saturation, 1.19));
+          backdrop-filter: blur(16px) saturate(1.19);
+          -webkit-backdrop-filter: blur(16px) saturate(1.19);
           border: 0.6px solid rgba(32,32,32,0.08);
           border-radius: 10px;
           box-shadow: 0 18px 38px -6px rgba(0,0,0,0.14), 0 2px 0 0 rgba(255,255,255,0.6) inset, 0 -1px 0 0 rgba(0,0,0,0.05) inset;
-          transform: translate3d(0, 0, 0) rotateY(-12deg) rotateX(-2deg);
           opacity: 0;
-          animation: heroNotifIn 600ms cubic-bezier(0.23, 1, 0.32, 1) forwards, heroNotifFloat 6s ease-in-out ${1200 + i * 400}ms infinite;
-          transform-origin: center;
+          animation: heroNotifIn 600ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
         `;
         const dot = document.createElement('div');
         dot.style.cssText = `
@@ -192,12 +189,8 @@
     const style = document.createElement('style');
     style.textContent = `
       @keyframes heroNotifIn {
-        0% { opacity: 0; transform: translate3d(30px, 10px, 0) rotateY(-16deg) rotateX(-6deg) scale(0.94); }
-        100% { opacity: 1; transform: translate3d(0, 0, 0) rotateY(var(--notif-rotate-y, -12deg)) rotateX(var(--notif-rotate-x, -2deg)) scale(var(--notif-scale, 0.88)); }
-      }
-      @keyframes heroNotifFloat {
-        0%, 100% { transform: translate3d(0, 0, 0) rotateY(-12deg) rotateX(-2deg) scale(0.88); }
-        50% { transform: translate3d(-3px, -4px, 0) rotateY(-10deg) rotateX(-1deg) scale(0.895); }
+        0% { opacity: 0; transform: translateY(12px); }
+        100% { opacity: 1; transform: translateY(0); }
       }
     `;
     document.head.appendChild(style);
